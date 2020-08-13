@@ -1,0 +1,54 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-family: "Open Sans", sans-serif; color: #5A7184; }
+
+.container { width: 1280px; margin: auto; }
+
+@font-face { font-family: "HK Grotesk"; src: url("../fonts/HKGrotesk-Bold.woff") format("woff"); font-style: normal; font-weight: bold; font-display: swap; }
+
+@font-face { font-family: "HK Grotesk"; src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2"); font-style: normal; font-weight: bold; font-display: swap; }
+
+.navbar-container { padding: 26px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 1140px; margin: 0 150px 36px; }
+
+.navbar-menu { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.navbar-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 594px; list-style-type: none; margin: 0; }
+
+.navbar-list__link { text-decoration: none; font-style: normal; font-weight: 600; font-size: 16px; line-height: 22px; color: #183B56; }
+
+.navbar-list__button { font-style: normal; font-weight: 600; font-size: 16px; line-height: 22px; background-color: #ffffff; color: #1565D8; border-radius: 8px; border: 2px solid #1565D8; }
+
+.navbar__menu-button { display: none !important; }
+
+.menu-button__line { height: 1px; width: 10px; color: #000000; }
+
+.main { max-width: 1280px; margin: 0 80px; position: relative; background-color: #E8EAE9; background-image: url(../img/bg-image.jpg); border-radius: 8px; }
+
+.main-container { display: -webkit-box; display: -ms-flexbox; display: flex; width: 652px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-left: 107px; }
+
+.main-hashtag { width: 175px; height: 32px; background-color: rgba(14, 199, 122, 0.1); border-radius: 2000px; padding: 6px 16px; margin-top: 62px; margin-bottom: 28px; }
+
+.main-hashtag__text { font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px; color: #36B37E; text-transform: uppercase; }
+
+.main__title { height: 204px; width: 474px; color: #183B56; font-family: HK Grotesk; font-style: normal; font-weight: bold; font-size: 56px; line-height: 68px; margin: 0 0 28px 0; }
+
+.main__paragraph { font-style: normal; font-weight: normal; font-size: 20px; line-height: 36px; width: 580px; margin: 0 0 52px 0; }
+
+.main__button { background-color: #183B56; color: #FFFFFF; height: 56px; width: 233px; padding: 15px 24px; font-style: normal; font-weight: bold; font-size: 18px; line-height: 25px; border-radius: 8px; border: none; outline: 0; margin-bottom: 48px; }
+
+.main-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 447px; margin-bottom: 46px; }
+
+.main-group__icon { width: 36px; height: 36px; border: 0.75px solid #1565D8; border-radius: 12px; margin-right: 8px; }
+
+.main-group__donate { height: 16px; width: 17px; margin: auto; margin: 9.92px 9.49px; }
+
+.main-group__shield { margin: 9.18px 10.02px; }
+
+.main-group__hand { width: 21px; height: 21px; margin: 7.5px 7.5px; }
+
+.main-group__span { font-family: HK Grotesk; font-style: normal; font-weight: 600; font-size: 16px; line-height: 20px; color: #183B56; }
+
+.main-icon { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+@media (max-width: 768px) { .container { width: 500px; } }
+/*# sourceMappingURL=style.css.map */
