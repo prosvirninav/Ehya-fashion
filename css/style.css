@@ -2,7 +2,7 @@
 
 body { font-family: "Open Sans", sans-serif; color: #5A7184; }
 
-.container { width: 1280px; margin: auto; }
+.container { width: 1280px; }
 
 @font-face { font-family: "HK Grotesk"; src: url("../fonts/HKGrotesk-Bold.woff") format("woff"); font-style: normal; font-weight: bold; font-display: swap; }
 
@@ -28,13 +28,13 @@ body { font-family: "Open Sans", sans-serif; color: #5A7184; }
 
 .main-hashtag__text { font-style: normal; font-weight: 600; font-size: 14px; line-height: 20px; color: #36B37E; text-transform: uppercase; }
 
-.main__title { height: 204px; width: 474px; color: #183B56; font-family: HK Grotesk; font-style: normal; font-weight: bold; font-size: 56px; line-height: 68px; margin: 0 0 28px 0; }
+.main__title { max-height: 204px; width: 474px; color: #183B56; font-family: HK Grotesk; font-style: normal; font-weight: bold; font-size: 56px; line-height: 68px; margin: 0 0 28px 0; }
 
 .main__paragraph { font-style: normal; font-weight: normal; font-size: 20px; line-height: 36px; width: 580px; margin: 0 0 52px 0; }
 
 .main__button { background-color: #183B56; color: #FFFFFF; height: 56px; width: 233px; padding: 15px 24px; font-style: normal; font-weight: bold; font-size: 18px; line-height: 25px; border-radius: 8px; border: none; outline: 0; margin-bottom: 48px; }
 
-.main-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 447px; margin-bottom: 46px; }
+.main-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 447px; margin-bottom: 46px; }
 
 .main-group__icon { width: 36px; height: 36px; border: 0.75px solid #1565D8; border-radius: 12px; margin-right: 8px; }
 
@@ -48,9 +48,13 @@ body { font-family: "Open Sans", sans-serif; color: #5A7184; }
 
 .main-icon { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
+@media (max-width: 1200px) { .main { background: url(../img/bg-image.jpg); background-position: center center; background-size: cover; max-width: 1120px; } }
+
 @media (max-width: 992px) { .navbar-container { margin: 36px 140px 50px; }
   .navbar-menu { width: 450px; }
-  .navbar-list__link, .navbar-list__button { font-size: 12px; line-height: 18px; } }
+  .navbar-list__link, .navbar-list__button { font-size: 12px; line-height: 18px; }
+  .main { max-width: 892px; margin: 0 50px; }
+  .main-container { margin-left: 50px; } }
 
 @media (max-width: 768px) { .menu-button { width: 24px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border: none; outline: 0; background-color: #ffffff; cursor: pointer; padding: 0; margin: 0; }
   .menu-button__line { height: 2.2px; width: 24px; background-color: #3A4C66; border-radius: 1px; }
@@ -62,4 +66,21 @@ body { font-family: "Open Sans", sans-serif; color: #5A7184; }
   .main__title { font-size: 48px; line-height: 60px; width: 407px; margin-bottom: 20px; }
   .main__paragraph { width: 400px; font-size: 18px; line-height: 32px; margin-bottom: 36px; }
   .main-group { margin-bottom: 36px; } }
+
+@media (max-width: 690px) { .navbar-container { margin: 20px 59px 30px; }
+  .main { max-width: 650px; background-position: 70% center; margin: 0 20px; }
+  .main__title { font-size: 42px; line-height: 50px; width: 350px; }
+  .main__paragraph { width: 380px; font-size: 18px; line-height: 32px; margin-bottom: 36px; } }
+
+@media (max-width: 576px) { .main { background-position: 70% center; margin: 0 20px; }
+  .main__title { font-size: 30px; line-height: 38px; width: 270px; margin-bottom: 20px; }
+  .main__paragraph { width: 280px; font-size: 16px; line-height: 28px; margin-bottom: 24px; }
+  .main__button { margin-bottom: 40px; }
+  .main-group { max-width: 400px; } }
+
+@media (min-width: 320px) and (max-width: 480px) { .main { background-position: 70% center; margin: 0 20px; }
+  .main__title { font-size: 30px; line-height: 38px; width: 270px; margin-bottom: 20px; }
+  .main__paragraph { width: 280px; font-size: 16px; line-height: 28px; margin-bottom: 24px; }
+  .main__button { margin-bottom: 40px; }
+  .main-group { max-width: 235px; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 /*# sourceMappingURL=style.css.map */

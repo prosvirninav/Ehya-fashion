@@ -1,3 +1,10 @@
+@media (max-width: 1200px)
+  .main
+    background: url(../img/bg-image.jpg)
+    background-position: center center
+    background-size: cover
+    max-width: 1120px
+
 @media (max-width: 992px)
   .navbar
     &-container
@@ -8,6 +15,12 @@
       &__link, &__button
         font-size: 12px
         line-height: 18px
+  .main
+    max-width: 892px
+    margin: 0 50px
+    &-container
+      margin-left: 50px
+
 @media (max-width: 768px)
   .menu
     &-button
@@ -55,4 +68,62 @@
       margin-bottom: 36px
     &-group
       margin-bottom: 36px
+
+@media (max-width: 690px)
+  .navbar
+    &-container
+      margin: 20px 59px 30px
+  .main
+    max-width: 650px
+    background-position: 70% center
+    margin: 0 20px
+    &__title
+      font-size: 42px
+      line-height: 50px
+      width: 350px
+    &__paragraph
+      width: 380px
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+
+@media (max-width: 576px)
+  .main
+    background-position: 70% center
+    margin: 0 20px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      width: 270px
+      margin-bottom: 20px
+    &__paragraph
+      width: 280px
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 24px
+    &__button
+      margin-bottom: 40px
+    &-group
+      max-width: 400px
+
+@media (min-width: 320px) and (max-width: 480px)
+  .main
+    background-position: 70% center
+    margin: 0 20px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      width: 270px
+      margin-bottom: 20px
+    &__paragraph
+      width: 280px
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 24px
+    &__button
+      margin-bottom: 40px
+    &-group
+      max-width: 235px
+      flex-wrap: wrap
+
     
